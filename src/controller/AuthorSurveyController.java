@@ -90,7 +90,7 @@ public class AuthorSurveyController extends HttpServlet {
 	    authorSurveyRepository.saveAuthorReview(Integer.parseInt(noOfStudies), design, data, Integer.parseInt(noOfHypotheses),
 				Integer.parseInt(noOfDV), Integer.parseInt(noOfIV), test, scale, Integer.parseInt(noOfGroups), groupAssignment, 
 				conditions, subjects, sizes, fields, hypos, dvs, ivs, articleId);
-		RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("home.jsp");
 		view.forward(request, response);
 	}
 }

@@ -110,7 +110,7 @@
 												
 												<%  
 												AuthorSurvey as = (AuthorSurvey) request.getAttribute("review");
-												if(as != null) {
+												if(as.getDesign() != null) {
 												%>
 												<b>Title: </b> <%= (String) request.getAttribute("title") %><br>
 												<b>Design: </b> <%= as.getDesign() %><br>
